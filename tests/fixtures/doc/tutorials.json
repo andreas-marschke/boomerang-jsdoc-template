@@ -1,0 +1,26 @@
+{
+	"guides": {
+		"title": "Usage Guides for Boomerang",
+		"children": {
+			"getting-started": {
+				"title": "Getting Started with the Project!"
+			},
+			"more-guides": {
+				"title": "More Guides to Look at!",
+				"children": {
+					"one-more-guide": {
+						"title": "One More Guide!"
+					}
+				}
+			}
+		}
+	},
+	"howto": {
+		"title": "How Tos & Quickstart Guides",
+		"children": {
+			"write-a-plugin": {
+				"title": "How to Write a Plugin"
+			}
+		}
+	}
+}

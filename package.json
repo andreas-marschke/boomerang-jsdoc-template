@@ -1,0 +1,51 @@
+{
+  "name": "boomerang-jsdoc-template",
+  "version": "1.0.0",
+  "description": "JSDoc Templates and Plugins for Boomerang",
+  "main": "template/publish.js",
+  "scripts": {
+    "test": "grunt test",
+    "install": "bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andreas-marschke/boomerang-jsdoc-template.git"
+  },
+  "keywords": [
+    "jsdoc",
+    "template",
+    "boomerang"
+  ],
+  "author": "Andreas Marschke <npm@andreas-marschke.name>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreas-marschke/boomerang-jsdoc-template/issues"
+  },
+  "homepage": "https://github.com/andreas-marschke/boomerang-jsdoc-template#readme",
+  "devDependencies": {
+    "eslint": "^2.11.0",
+    "eslint-plugin-html": "^1.5.1",
+    "express": "^4.14.0",
+    "grunt": "^1.0.1",
+    "grunt-clean": "^0.4.0",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-express-server": "^0.5.3",
+    "grunt-jsdoc": "^2.1.0",
+    "grunt-mocha-test": "^0.12.7",
+    "gruntify-eslint": "^2.0.0",
+    "mocha": "^2.5.3",
+    "serve-static": "^1.11.1"
+  },
+  "dependencies": {
+    "bower": "^1.7.9",
+    "highlight.js": "^9.6.0",
+    "jsdoc": "^3.4.0",
+    "marked": "^0.3.6",
+    "mermaid": "^6.0.0",
+    "mkdirp": "^0.5.1",
+    "nunjucks": "^2.4.2",
+    "rimraf": "^2.5.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"tags": {
+		"allowUnknownTags": true
+	},
+	"plugins": [
+		"./plugins/boomr-config-property",
+		"./plugins/boomr-beacon-param"
+	],
+	"opts": {
+		"tutorials": "tests/fixtures/doc/",
+		"recurse": true,
+		"versioned": false
+	}
+}

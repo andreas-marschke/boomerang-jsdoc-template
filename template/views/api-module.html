@@ -1,0 +1,101 @@
+{% extends "layout/default.html" %}
+
+{% block styles %}
+  
+{% endblock %}
+
+{% block scripts %}
+  
+{% endblock %}
+
+{% block navaddon %}
+{% endblock %}
+
+{% block body %}
+
+  <div class="page-content">
+    <h1>Plugin: <code>{{ name }}</code></h1>
+  </div>
+  <div class="page-content flow-text">
+    {{ description }}
+  </div>
+  <div class="page-content">
+    <h3>Functions</h3>
+
+    <div class="attribute-block">
+      {% for function in functions %}
+	<div id="function~{{ function.name }}">
+	  <p class="flow-text">{{ function.name }}</p>
+	  <div class="properties">
+	    {% if function.params.length > 0 %}
+	      <table class="bordered responsive-table striped">
+		<thead>
+		  <tr>
+		    <th class="">Param Name</th>
+		    <th class="">Type</th>
+		    <th class="">Description</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {% for param in function.params %}
+		    <tr>
+		      <td class="">{{ param.name }}</td>
+		      <td class="">
+			{{ param.type | lookupTypes | join(",") }}
+		      </td>
+		      <td>{{ param.description }}</td>
+		    </tr>
+		  {% endfor %}
+		</tbody>
+	      </table>
+	    {% endif %}
+	  </div>
+	  <div class="description">
+	    {{ function.description }}
+	  </div>
+	</div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="page-content">
+    <h3>Public Events</h3>
+
+    <div class="attribute-block">
+      {% for event in events %}
+	<div id="event~{{ event.name }}">
+	  <p class="flow-text attribute-name">{{ event.name }}</p>
+
+	  <div class="attribute-parameters">
+	    {% if event.properties.length > 0 %}
+	      <table class="bordered responsive-table striped">
+		<thead>
+		  <tr>
+		    <th class="">Param Name</th>
+		    <th class="">Type</th>
+		    <th class="">Description</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  {% for param in event.properties %}
+		    <tr>
+		      <td class="param-name">{{ param.name }}</td>
+		      <td class="param-types">
+			{{ param.type | lookupTypes | join(",") }}
+		      </td>
+		      <td class="param-description">{{ param.description }}</td>
+		    </tr>
+		  {% endfor %}
+		</tbody>
+	      </table>	  
+	    {% endif %}
+	  </div>
+	  <div class="description">
+	    {{ event.description }}
+	  </div>
+	</div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock %}
+
+

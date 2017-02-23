@@ -1,0 +1,29 @@
+{
+  "name": "boomerang-jsdoc-template",
+  "description": "JSDoc Templates and Plugins for Boomerang",
+  "main": "template/publish.js",
+  "authors": [
+    "Andreas Marschke <npm@andreas-marschke.name>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "jsdoc",
+    "template",
+    "boomerang"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "template/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "^1.1.3",
+    "materialize": "^0.97.7",
+    "highlightjs": "^9.6.0"
+  }
+}

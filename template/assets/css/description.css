@@ -1,0 +1,16 @@
+.attribute-block .description ul {
+  
+}
+
+.attribute-block .description ul li {
+  padding-left: 30px;
+  list-style-type: disc;
+  list-style-image: none;
+  list-style-position: inside;
+}
+
+.attribute-block table p {
+  padding: 0;
+  margin: 0;
+}
+
